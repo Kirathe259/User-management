@@ -1,5 +1,4 @@
-import React, { useState } from 'react';
-import api from '../../services/api';
+import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
@@ -9,8 +8,6 @@ import IconButton from '@mui/material/IconButton';
 import InputAdornment from '@mui/material/InputAdornment';
 import Visibility from '@mui/icons-material/Visibility';
 import VisibilityOff from '@mui/icons-material/VisibilityOff';
-import { LockIcon } from '@mui/icons-material'; // Import LockIcon
-import LockIconBox from './LockIconBox'; // Import LockIconBox component
 
 function PasswordReset() {
   const [email, setEmail] = useState('');
@@ -24,12 +21,14 @@ function PasswordReset() {
   const [showConfirmPassword, setShowConfirmPassword] = useState(false);
 
   const handlePasswordChange = (value) => {
+
     const regex = /^(?=.\d)(?=.[!@#$%^&])(?!.\s).{5,15}$/;
     if (!regex.test(value)) {
       setError("Password must be between 5 to 15 characters, contain at least one number, one symbol, and no spaces");
     } else {
       setError("");
     }
+
     setNewPassword(value);
   };
 
@@ -45,6 +44,7 @@ function PasswordReset() {
       setLoading(true);
 
       const response = await api.put('/resetpassword', {
+
         email,
         newPassword,
       });
@@ -67,7 +67,7 @@ function PasswordReset() {
         justifyContent: 'center',
         alignItems: 'center',
         height: '100vh',
-        backgroundColor: '#DEE1E6',
+        backgroundColor: '#169',
       }}
     >
       <Box
@@ -77,15 +77,11 @@ function PasswordReset() {
           borderRadius: 3,
           bgcolor: 'white',
           textAlign: 'center',
-          height: '550px', // Adjusted height to accommodate LockIconBox
+          height:'550px'
         }}
       >
-        <Typography variant="h3" gutterBottom sx={{ color: '#c00100', fontWeight: 'bold' }}>TeleAfia</Typography>
-        <Typography variant="h6" gutterBottom sx={{ fontWeight: 'bold' }}>_Reset Password</Typography>
-
-        {/* Insert LockIconBox component here */}
-        <LockIconBox />
-
+        <Typography variant="h3" gutterBottom sx={{ color: '#169',fontWeight:'bold' }}>Afya Bora</Typography>
+        <Typography variant="h6" gutterBottom sx={{fontWeight:'bold'}}>_Reset Password</Typography>
         <form onSubmit={handleResetPassword}>
           <TextField
             fullWidth
@@ -146,7 +142,7 @@ function PasswordReset() {
             variant="contained"
             color="primary"
             disabled={loading}
-            sx={{ mt: 8, backgroundColor: '#c00100', width: 250 }}
+            sx={{ mt: 8, backgroundColor: '#169',width:250}}
           >
             {loading ? 'Resetting...' : 'Reset'}
           </Button>

@@ -1,11 +1,12 @@
-import PasswordReset from '../components/PasswordReset/passwordReset';
+import React from 'react'
+import PasswordReset from '../components/ResetPassword/ResetPassword'
 
 const ResetPasswordPage = () => {
   return (
-    <div>
-    <PasswordReset />
+    <div style={{marginLeft: '27vw'}}>
+      <PasswordReset/>
     </div>
-  );
+  )
 }
 
-export default ResetPasswordPage;
+export default ResetPasswordPage

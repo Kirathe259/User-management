@@ -231,7 +231,7 @@ function RegisterForm() {
 
         <Box sx={{ width: "100%", maxWidth: { xs: "100%", md: "400px" } }}>
           <FormTitle>
-            <h1>TeleAfia</h1>
+            <h1>Health Tech</h1>
             <h3 style={{ textAlign: "center", position: "relative" }}>
               <span
                 style={{

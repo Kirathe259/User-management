@@ -58,7 +58,7 @@ function ForgotPassword() {
           variant="h3"
           sx={{ color: "#c00100", fontWeight: "bold", marginBottom: "20px" }}
         >
-          TeleAfia
+          Health Tech
         </Typography>
         <Typography
           variant="h5"
