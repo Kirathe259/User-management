@@ -3,7 +3,7 @@ import LoginForm from "../components/Login/LoginForm"
 
 const LoginPage = () => {
   return (
-    <div>
+    <div style={{marginLeft: '30vw'}}>
      <LoginForm/> 
     </div>
   )

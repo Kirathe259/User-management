@@ -80,7 +80,7 @@ function PasswordReset() {
           height:'550px'
         }}
       >
-        <Typography variant="h3" gutterBottom sx={{ color: '#169',fontWeight:'bold' }}>Afya Bora</Typography>
+        <Typography variant="h3" gutterBottom sx={{ color: '#169',fontWeight:'bold' }}>My Health</Typography>
         <Typography variant="h6" gutterBottom sx={{fontWeight:'bold'}}>_Reset Password</Typography>
         <form onSubmit={handleResetPassword}>
           <TextField

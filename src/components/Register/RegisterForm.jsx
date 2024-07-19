@@ -18,7 +18,7 @@ import MenuItem from "@mui/material/MenuItem";
 import Select from "@mui/material/Select";
 
 const FormTitle = styled("div")({
-  backgroundColor: "#c00100",
+  backgroundColor: "#202",
   color: "white",
   width: 400,
   textAlign: "center",
@@ -207,7 +207,7 @@ function RegisterForm() {
   const theme = createTheme({
     palette: {
       primary: {
-        main: "#c00100",
+        main: "#202",
       },
       action: {
         active: "#d9d9d9",
@@ -224,26 +224,26 @@ function RegisterForm() {
           alignItems: "center",
           backgroundColor: "#fff",
           minHeight: "100vh",
-          padding: { xs: "10px", md: "20px" },
+          padding: { xs: "15px", md: "20px" },
         }}
       >
         <ToastContainer />
 
-        <Box sx={{ width: "100%", maxWidth: { xs: "100%", md: "400px" } }}>
-          <FormTitle>
-            <h1>Health Tech</h1>
-            <h3 style={{ textAlign: "center", position: "relative" }}>
+        <Box sx={{ width: "100%", maxWidth: { xs: "100%", md: "400px" } }} >
+          <FormTitle style={{ backgroundColor: "#202", }}>
+            <h2 style={{ textAlign: "center", position: "relative" }}>
               <span
                 style={{
                   borderBottom: "1px solid white",
                   display: "inline-block",
                   width: "calc(200px)",
                   padding: "0 10px",
+                  
                 }}
               >
-                Register
+                Signup
               </span>
-            </h3>
+            </h2>
           </FormTitle>
 
           <form onSubmit={handleSubmit}>

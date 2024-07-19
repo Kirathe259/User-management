@@ -125,7 +125,7 @@ function Login() {
         justifyContent: "center",
         alignItems: "center",
         height: "100vh",
-        backgroundColor: "#DEE1E6",
+        backgroundColor: "#202",
       }}
     >
       <Box
@@ -140,9 +140,9 @@ function Login() {
         <Typography
           variant="h3"
           gutterBottom
-          sx={{ color: "#c00100", fontWeight: "bold", marginBottom: 4 }}
+          sx={{ color: "#202", fontWeight: "bold", marginBottom: 4 }}
         >
-          TeleAfia
+          Sign in here
         </Typography>
         <Typography
           variant="h5"
@@ -202,7 +202,7 @@ function Login() {
               style={{
                 textDecoration: "none",
                 marginLeft: "auto",
-                color: "#c00100",
+                color: "#202",
               }}
             >
               Forgot password?
@@ -212,7 +212,7 @@ function Login() {
           <Button
             type="submit"
             variant="contained"
-            sx={{ backgroundColor: "#c00100", width: "300px" }}
+            sx={{ backgroundColor: "#202", width: "300px" }}
           >
             {loading ? <CircularProgress size={24} /> : "Login"}
           </Button>
@@ -227,7 +227,7 @@ function Login() {
             Don't have an account?
             <Link
               to="/register"
-              style={{ textDecoration: "none", color: "#c00100" }}
+              style={{ textDecoration: "none", color: "#202" }}
             >
               Sign Up
             </Link>

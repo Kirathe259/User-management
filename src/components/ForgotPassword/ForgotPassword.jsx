@@ -41,7 +41,7 @@ function ForgotPassword() {
         justifyContent: "center",
         alignItems: "center",
         height: "100vh",
-        backgroundColor: "#DEE1E6",
+        backgroundColor: "#202",
       }}
     >
       <Box
@@ -56,9 +56,9 @@ function ForgotPassword() {
       >
         <Typography
           variant="h3"
-          sx={{ color: "#c00100", fontWeight: "bold", marginBottom: "20px" }}
+          sx={{ color: "#202", fontWeight: "bold", marginBottom: "20px" }}
         >
-          Health Tech
+          My App
         </Typography>
         <Typography
           variant="h5"
@@ -86,10 +86,10 @@ function ForgotPassword() {
             color="primary"
             sx={{
               mt: 2,
-              backgroundColor: "#c00100",
+              backgroundColor: "#202",
               marginTop: "20px",
               cursor: "pointer",
-              hover: { backgroundColor: "#c00100" },
+              hover: { backgroundColor: "#202" },
             }}
             disabled={loading}
           >
