@@ -67,7 +67,7 @@ function PasswordReset() {
         justifyContent: 'center',
         alignItems: 'center',
         height: '100vh',
-        backgroundColor: '#169',
+        backgroundColor: '#202',
       }}
     >
       <Box
@@ -77,10 +77,10 @@ function PasswordReset() {
           borderRadius: 3,
           bgcolor: 'white',
           textAlign: 'center',
-          height:'550px'
+          height:'70vh'
         }}
       >
-        <Typography variant="h3" gutterBottom sx={{ color: '#169',fontWeight:'bold' }}>My Health</Typography>
+        <Typography variant="h3" gutterBottom sx={{ color: '#202',fontWeight:'bold' }}>Reset Password</Typography>
         <Typography variant="h6" gutterBottom sx={{fontWeight:'bold'}}>_Reset Password</Typography>
         <form onSubmit={handleResetPassword}>
           <TextField
@@ -142,7 +142,7 @@ function PasswordReset() {
             variant="contained"
             color="primary"
             disabled={loading}
-            sx={{ mt: 8, backgroundColor: '#169',width:250}}
+            sx={{ mt: 8, backgroundColor: '#202',width:250}}
           >
             {loading ? 'Resetting...' : 'Reset'}
           </Button>

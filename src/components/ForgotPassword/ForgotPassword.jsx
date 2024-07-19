@@ -51,7 +51,7 @@ function ForgotPassword() {
           borderRadius: 3,
           bgcolor: "white",
           textAlign: "center",
-          height: "500px",
+          height: "60vh",
         }}
       >
         <Typography
