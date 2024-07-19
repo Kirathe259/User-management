@@ -73,8 +73,8 @@ function VerifyOtp() {
 				justifyContent: "center",
 				alignItems: "center",
 				height: "100vh",
-				backgroundColor: "#095",
-        outline: "solid thin #095"
+				backgroundColor: "#202",
+        outline: "solid thin #202"
 			}}>
 			<Box
 				sx={{
@@ -87,8 +87,8 @@ function VerifyOtp() {
 				<Typography
 					variant="h3"
 					gutterBottom
-					sx={{ color: "#095", fontWeight: "bold" }}>
-					Afya Bora
+					sx={{ color: "#202", fontWeight: "bold" }}>
+					OTP Verification
 				</Typography>
 				<Typography
 					variant="h5"
@@ -121,7 +121,7 @@ function VerifyOtp() {
 						variant="contained"
 						color="primary"
 						disabled={verifyLoading}
-						sx={{ mt: 2, backgroundColor: "#095" }}>
+						sx={{ mt: 2, backgroundColor: "#202" }}>
 						{verifyLoading ? "Verifying..." : "Verify OTP"}
 					</Button>
 				</form>
@@ -130,7 +130,7 @@ function VerifyOtp() {
 					disabled={resendLoading}
 					sx={{
 						mt: 2,
-						color: "#095",
+						color: "#202",
 						backgroundColor: "white",
 						border: "1px solid black",
 					}}>

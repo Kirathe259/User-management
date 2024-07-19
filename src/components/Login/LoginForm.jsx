@@ -144,13 +144,7 @@ function Login() {
         >
           Sign in here
         </Typography>
-        <Typography
-          variant="h5"
-          gutterBottom
-          sx={{ marginBottom: "35px", fontWeight: "bold" }}
-        >
-          ________User Login________
-        </Typography>
+       
         <form onSubmit={handleSubmit}>
           <div>
             <TextField
@@ -214,7 +208,7 @@ function Login() {
             variant="contained"
             sx={{ backgroundColor: "#202", width: "300px" }}
           >
-            {loading ? <CircularProgress size={24} /> : "Login"}
+            {loading ? <CircularProgress size={24} /> : "Sign In"}
           </Button>
           {errorMessage && <div className="error-message">{errorMessage}</div>}
         </form>

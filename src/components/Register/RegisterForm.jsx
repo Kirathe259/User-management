@@ -20,7 +20,7 @@ import Select from "@mui/material/Select";
 const FormTitle = styled("div")({
   backgroundColor: "#202",
   color: "white",
-  width: 400,
+  width: 450,
   textAlign: "center",
   fontFamily: "Nunito, sans-serif",
   fontSize: 15,
@@ -246,7 +246,7 @@ function RegisterForm() {
             </h2>
           </FormTitle>
 
-          <form onSubmit={handleSubmit}>
+          <form onSubmit={handleSubmit} style={{ width: "33vw",}}>
             <Box sx={{ display: "flex", flexDirection: "column", gap: 2 }}>
               {[
                 { label: "Name", name: "name", value: name },
@@ -404,7 +404,7 @@ function RegisterForm() {
                 sx={{ width: "100%" }}
                 disabled={loading || !areFieldsFilled()}
               >
-                {loading ? "Loading..." : "Register"}
+                {loading ? "Loading..." : "Sign up"}
               </Button>
               {serverError && <p style={{ color: "red" }}>{serverError}</p>}
             </Box>
