@@ -78,7 +78,7 @@ function VerifyOtp() {
 			}}>
 			<Box
 				sx={{
-					width: 400,
+					width: 450,
 					p: 4,
 					borderRadius: 3,
 					bgcolor: "white",

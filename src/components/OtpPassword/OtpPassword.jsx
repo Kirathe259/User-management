@@ -63,7 +63,7 @@ function OtpPassword() {
   return (
     <Box
       sx={{
-        backgroundColor: "#DEE1E6",
+        backgroundColor: "#202",
         height: "100vh",
         display: "flex",
         justifyContent: "center",
@@ -85,9 +85,9 @@ function OtpPassword() {
           variant="h3"
           color="primary"
           gutterBottom
-          sx={{ fontWeight: "bold", color: "#c00100" }}
+          sx={{ fontWeight: "bold", color: "#202" }}
         >
-          TeleAfia
+          OTP Verification
         </Typography>
         <Typography
           variant="h5"
@@ -119,7 +119,7 @@ function OtpPassword() {
             type="submit"
             variant="contained"
             disabled={loadingVerify}
-            sx={{ mr: 0, backgroundColor: "#c00100" }}
+            sx={{ mr: 0, backgroundColor: "#202" }}
           >
             {loadingVerify ? (
               <CircularProgress size={24} color="inherit" />
